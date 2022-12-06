@@ -2,6 +2,7 @@ package Fractals;
 import processing.core.PApplet;
 
 
+
 /**
   @(#)KochCurve.java
   @author Katia
@@ -12,7 +13,7 @@ public class FractalSnowflake extends FractalCurve{
 	private int mSides;
 	private double mAngle;
 	
-    public KochSnowflake(int level, int length, int sides) {
+    public FractalSnowflake(int level, int length, int sides) {
     	super(level, length);
     	mSides = sides;
     	mAngle = 360 / sides;

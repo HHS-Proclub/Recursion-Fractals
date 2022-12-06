@@ -1,4 +1,5 @@
 package Fractals;
+import processing.core.PApplet;
 
 public class BeginnerPractice {
 	
@@ -11,10 +12,10 @@ public class BeginnerPractice {
 	 * @return
 	 */
 	public static int factorial (int n) {
-		if () { //base case
-			return;
+		if (false) { //base case
+			return 0;
 		} else {
-			return; //recursive case
+			return 0; //recursive case
 		}
 	}
 
@@ -25,10 +26,10 @@ public class BeginnerPractice {
 	 * @return
 	 */
 	public static int squareNumber(int n) {
-		if () { //base case
-			return;
+		if (false) { //base case
+			return 0;
 		} else {
-			return; //recursive case
+			return 0; //recursive case
 		}
 	}
 
@@ -39,10 +40,10 @@ public class BeginnerPractice {
 	 * @return
 	 */
 	public static int logBase2(int n) {
-		if () {
-			return;
+		if (false) {
+			return 0;
 		} else {
-			return;
+			return 0;
 		}
 	}
 

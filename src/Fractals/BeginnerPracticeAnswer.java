@@ -1,4 +1,5 @@
 package Fractals;
+import processing.core.PApplet;
 
 public class BeginnerPracticeAnswer {
 

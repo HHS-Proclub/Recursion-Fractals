@@ -1,5 +1,5 @@
 package Fractals;
-
+import processing.core.PApplet;
 import java.awt.event.KeyEvent;
 
 import processing.core.PApplet;
@@ -8,13 +8,13 @@ import processing.event.MouseEvent;
 
 public class DrawingSurface extends PApplet {
 
-	private KochSnowflake snowflake;
+	private FractalSnowflake snowflake;
 	private int level, length;
 	
 	public DrawingSurface() {
 		level = 0;
 		length = 100;
-		snowflake = new KochSnowflake(level,length, 3);
+		snowflake = new FractalSnowflake(level,length, 3);
 	}
 	
 	// The statements in the setup() function 
@@ -40,16 +40,16 @@ public class DrawingSurface extends PApplet {
 	public void mouseWheel(MouseEvent event) {
 		  int num = event.getCount();
 		  length -= num*10;
-		  snowflake = new KochSnowflake(level,length, 3);
+		  snowflake = new FractalSnowflake(level,length, 3);
 	}
 	
 	public void keyPressed() {
 		if (keyCode == KeyEvent.VK_UP) {
 			level++;
-			snowflake = new KochSnowflake(level,length, 3);
+			snowflake = new FractalSnowflake(level,length, 3);
 		} else if (keyCode == KeyEvent.VK_DOWN) {
 			level--;
-			snowflake = new KochSnowflake(level,length, 3);
+			snowflake = new FractalSnowflake(level,length, 3);
 		}
 	}
 	
